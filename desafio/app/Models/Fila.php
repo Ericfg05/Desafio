@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class Fila extends Model
 {
-    protected $table            = 'Fila';
+    protected $table            = 'fila';
     protected $primaryKey       = 'fila_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['fila_nome', 'fila_data','fila_sala_id', 'fila_status', 'fila_data_atendimento'];
+    protected $allowedFields    = ['fila_nome', 'fila_data','fila_hora','fila_sala_id', 'fila_status', 'fila_data_atendimento'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
