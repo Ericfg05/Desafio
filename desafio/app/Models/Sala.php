@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class Sala extends Model
 {
-    protected $table            = 'Sala';
+    protected $table            = 'sala';
     protected $primaryKey       = 'sala_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';

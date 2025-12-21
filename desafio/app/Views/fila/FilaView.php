@@ -1,8 +1,10 @@
 <?php ?>
     <div class="container">
-        <p><?= "Posição: #". $id ?></p>
-        <h1><?= "Nome:".$nome ?></h1>
-        <h2><?= "Sala: ".$sala ?></h2>
-        <p> <?= "Data e hora: ".$data ?></p>
-
+        <?php foreach($resultado as $rs): ?>
+            <h1><?= "Sala: ".$rs['sala'] ?></h1>
+            <h1><?= "Nome:".$rs['nome'] ?></h1>
+            <p><?= "Posição: #". $rs['id'] ?></p>
+            <p> <?= "Data e hora: ".$rs['data'] ?></p>
+        <?php endforeach; ?>
+   
     </div>

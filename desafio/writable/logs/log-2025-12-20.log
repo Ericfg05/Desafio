@@ -2705,3 +2705,14 @@ in APPPATH/Controllers/FilaController.php on line 64.
  5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
  6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
  7 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-20 21:52:23 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Fila::buscarSala
+[Method: POST, Route: inserir]
+in SYSTEMPATH/Model.php on line 927.
+ 1 APPPATH/Controllers/FilaController.php(51): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController::inserir()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')

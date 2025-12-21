@@ -53,16 +53,48 @@ class FilaController extends BaseController
     }
     public function getFila(){
         
-        
+        date_default_timezone_set('America/Sao_Paulo');
+
         $valor = new FilaDao();
-       
+        $datas['sala'] = $this->sala->findAll();
+        
+      
+        
+        
+       // $val = $resultado;
+      //  var_dump($val);
         $value = $valor->getValorMenor();
-         $valorSala = $this->sala->find($value->fila_sala_id) ;      
-        $datas['id'] = $value->fila_id;
-        $datas['nome'] = $value->fila_nome;
-        $datas['data'] = $value->fila_data_atendimento;
-        $datas['sala'] = $valorSala->sala_nome;
-        return view('/FilaExpor', $datas);           
-        }
+        //var_dump($value);
+       
+            foreach($value as $vs){
+              //  var_dump($vs);
+                $valorSala = $this->sala->find($vs['sala']) ;   
+                $data = new DateTime($vs['data']);
+                $rs[] = [
+                    'id' => $vs['id'],
+                    'nome' => $vs['nome'],
+                    'data' => $data->format('d/m/Y'),
+                    'sala' => $valorSala->sala_nome
+                ];
+           
+            }
+            $datas['resultado'] = $rs;
+            /*$valorSala = $this->sala->find($value->fila_sala_id) ;      
+            $datas['id'] = $value->fila_id;
+            $datas['nome'] = $value->fila_nome;
+            $datas['data'] = date('d/m/Y H:i:s');
+            $datas['sala'] = $valorSala->sala_nome;*/
+           /* $datas['id'] = '$value->fila_id';
+            $datas['nome'] = '$value->fila_nome';
+            $datas['data'] = 'date(d/m/Y H:i:s)';
+            $datas['sala'] = '$valorSala->sala_nome';*/
+          //  var_dump($datas);
+            return view('/FilaExpor', $datas);        
+    }   
+    
+
+    public function proximo(){
+        // pegaria o proxima_sala. ou seja, o atual seria colocado status 0 e adicionado o proximo com a sala que deverá receber o novo atendente.
     }
+}
 
