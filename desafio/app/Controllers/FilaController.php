@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Dao\FilaDao;
+use App\Dao\UsuarioDao;
 use App\Models\Fila;
 use App\Models\Sala;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -93,8 +94,35 @@ class FilaController extends BaseController
     }   
     
 
-    public function proximo(){
+    public function proximo($id){
         // pegaria o proxima_sala. ou seja, o atual seria colocado status 0 e adicionado o proximo com a sala que deverá receber o novo atendente.
+        $filas = $this->fila->find($id);
+       // var_dump($filas);
+        $datas = [
+            'filas_status' => 0
+        ];
+        $this->fila->set('fila_status', 0);
+        $this->fila->where('fila_id', $filas->fila_id);
+        $this->fila->update();
+        $user = new UsuarioDao();
+               $user = $user->getSalas();
+                foreach($user as $vs){
+               
+                $valorSala = $this->sala->find($vs['sala']) ;   
+                $data = new DateTime($vs['data']);
+                $rs[] = [
+                    'id' => $vs['id'],
+                    'nome' => $vs['nome'],
+                    'data' => $data->format('d/m/Y'),
+                    'sala' => $valorSala->sala_nome
+                ];
+           
+            }   
+
+            $datas['resultado'] = $rs;
+                return view('/layoutAdmin.php', $datas);
+        return view('/layoutAdmin.php');
+        //
     }
 }
 

@@ -1,0 +1,1050 @@
+CRITICAL - 2025-12-22 18:46:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/usuario_layout.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/UsuarioController.php(18): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 16:03:41 --> ErrorException: Undefined variable $resultado
+[Method: GET, Route: lista]
+in APPPATH/Dao/FilaDao.php on line 43.
+ 1 APPPATH/Dao/FilaDao.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/FilaController.php(66): App\Dao\FilaDao->getValorMenor()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->getFila()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 19:05:33 --> TypeError: CodeIgniter\Database\BaseBuilder::getOperatorFromWhereKey(): Argument #1 ($whereKey) must be of type string, int given, called in /home/eric/Desafio/desafio/system/Database/BaseBuilder.php on line 781
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseBuilder.php on line 3494.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(781): CodeIgniter\Database\BaseBuilder->getOperatorFromWhereKey()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(722): CodeIgniter\Database\BaseBuilder->whereHaving()
+ 3 SYSTEMPATH/Model.php(925): CodeIgniter\Database\BaseBuilder->where()
+ 4 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\Model->__call()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 19:08:12 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Usuario::getRow
+[Method: POST, Route: login]
+in SYSTEMPATH/Model.php on line 927.
+ 1 APPPATH/Controllers/UsuarioController.php(31): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 19:08:14 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Usuario::getRow
+[Method: POST, Route: login]
+in SYSTEMPATH/Model.php on line 927.
+ 1 APPPATH/Controllers/UsuarioController.php(31): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 19:08:21 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Usuario::getRow
+[Method: POST, Route: login]
+in SYSTEMPATH/Model.php on line 927.
+ 1 APPPATH/Controllers/UsuarioController.php(31): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+ERROR - 2025-12-22 19:11:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nome` = 'eric.ferreira'
+AND `login_senha` = '6000a942bc249686c002b905d5bc7a3...' at line 3 in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /home/eric/Desafio/desafio/app/Controllers/UsuarioController.php(29): CodeIgniter\BaseModel->first()
+#7 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2025-12-22 19:11:27 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nome` = 'eric.ferreira'
+AND `login_senha` = '6000a942bc249686c002b905d5bc7a3...' at line 3
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 19:11:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nome` = 'eric.ferreira'
+AND `login_senha` = '6000a942bc249686c002b905d5bc7a3...' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 19:11:27 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nome` = 'eric.ferreira'
+AND `login_senha` = '6000a942bc249686c002b905d5bc7a3...' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:42:59 --> ErrorException: Undefined variable $resultado
+[Method: POST, Route: login]
+in APPPATH/Dao/FilaDao.php on line 43.
+ 1 APPPATH/Dao/FilaDao.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(47): App\Dao\FilaDao->getValorMenor()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:44:35 --> ErrorException: Undefined variable $resultado
+[Method: POST, Route: login]
+in APPPATH/Dao/FilaDao.php on line 43.
+ 1 APPPATH/Dao/FilaDao.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(48): App\Dao\FilaDao->getValorMenor()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:46:53 --> ErrorException: Undefined variable $resultado
+[Method: POST, Route: login]
+in APPPATH/Dao/FilaDao.php on line 64.
+ 1 APPPATH/Dao/FilaDao.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(48): App\Dao\FilaDao->getValorMenor()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:47:18 --> ErrorException: Undefined variable $resultado
+[Method: POST, Route: login]
+in APPPATH/Dao/FilaDao.php on line 40.
+ 1 APPPATH/Dao/FilaDao.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(48): App\Dao\FilaDao->getValorMenor()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:48:02 --> ErrorException: Undefined variable $resultado
+[Method: POST, Route: login]
+in APPPATH/Dao/FilaDao.php on line 41.
+ 1 APPPATH/Dao/FilaDao.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(48): App\Dao\FilaDao->getValorMenor()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:48:34 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 63.
+ 1 APPPATH/Controllers/UsuarioController.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:48:55 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 63.
+ 1 APPPATH/Controllers/UsuarioController.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:48:58 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 63.
+ 1 APPPATH/Controllers/UsuarioController.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:49:02 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 63.
+ 1 APPPATH/Controllers/UsuarioController.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:49:24 --> ErrorException: Undefined variable $nome
+[Method: POST, Route: login]
+in APPPATH/Views/admin/admin.php on line 2.
+ 1 APPPATH/Views/admin/admin.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/layoutAdmin.php(3): include('/home/eric/Desafio/desafio/app/Views/admin/admin.php')
+ 3 SYSTEMPATH/View/View.php(226): include('/home/eric/Desafio/desafio/app/Views/layoutAdmin.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/UsuarioController.php(65): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 19:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:56:11 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 57.
+ 1 APPPATH/Controllers/UsuarioController.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:56:30 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 57.
+ 1 APPPATH/Controllers/UsuarioController.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:56:47 --> ErrorException: Undefined variable $nome
+[Method: POST, Route: login]
+in APPPATH/Views/admin/admin.php on line 2.
+ 1 APPPATH/Views/admin/admin.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/layoutAdmin.php(3): include('/home/eric/Desafio/desafio/app/Views/admin/admin.php')
+ 3 SYSTEMPATH/View/View.php(226): include('/home/eric/Desafio/desafio/app/Views/layoutAdmin.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/UsuarioController.php(59): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 19:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:57:41 --> ErrorException: Undefined variable $nome
+[Method: POST, Route: login]
+in APPPATH/Views/admin/admin.php on line 2.
+ 1 APPPATH/Views/admin/admin.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/layoutAdmin.php(3): include('/home/eric/Desafio/desafio/app/Views/admin/admin.php')
+ 3 SYSTEMPATH/View/View.php(226): include('/home/eric/Desafio/desafio/app/Views/layoutAdmin.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/UsuarioController.php(59): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:58:02 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 58.
+ 1 APPPATH/Controllers/UsuarioController.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:58:24 --> ErrorException: Undefined variable $rs
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 58.
+ 1 APPPATH/Controllers/UsuarioController.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 19:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 19:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 19:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 19:59:40 --> Error: Object of type CodeIgniter\Session\Session is not callable
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 20.
+ 1 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:00:24 --> Error: Object of type CodeIgniter\Session\Session is not callable
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 20.
+ 1 APPPATH/Controllers/UsuarioController.php(46): App\Dao\UsuarioDao->getSalas()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:00:38 --> Error: Object of type CodeIgniter\Session\Session is not callable
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 20.
+ 1 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:04:00 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 21.
+ 1 APPPATH/Dao/UsuarioDao.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:04:35 --> Error: Object of type CodeIgniter\Session\Session is not callable
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 20.
+ 1 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:05:18 --> Error: Object of type CodeIgniter\Session\Session is not callable
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 20.
+ 1 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:05:52 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 46.
+ 1 APPPATH/Controllers/UsuarioController.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:06:25 --> Error: Object of type CodeIgniter\Session\Session is not callable
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 20.
+ 1 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:07:42 --> ErrorException: Attempt to read property "sala_id" on string
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 22.
+ 1 APPPATH/Dao/UsuarioDao.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:10:14 --> ErrorException: Attempt to read property "sala_id" on string
+[Method: POST, Route: login]
+in APPPATH/Dao/UsuarioDao.php on line 23.
+ 1 APPPATH/Dao/UsuarioDao.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(45): App\Dao\UsuarioDao->getSalas()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:10:42 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: login]
+in APPPATH/Controllers/UsuarioController.php on line 46.
+ 1 APPPATH/Controllers/UsuarioController.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:12:00 --> ErrorException: Undefined variable $resultado
+[Method: POST, Route: login]
+in APPPATH/Views/admin/admin.php on line 2.
+ 1 APPPATH/Views/admin/admin.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/layoutAdmin.php(3): include('/home/eric/Desafio/desafio/app/Views/admin/admin.php')
+ 3 SYSTEMPATH/View/View.php(226): include('/home/eric/Desafio/desafio/app/Views/layoutAdmin.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/UsuarioController.php(60): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UsuarioController->login()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-12-22 20:30:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`)) in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(838): CodeIgniter\Model->doInsert()
+#6 /home/eric/Desafio/desafio/system/Model.php(797): CodeIgniter\BaseModel->insert()
+#7 /home/eric/Desafio/desafio/app/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-12-22 20:30:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`))
+[Method: GET, Route: proximo/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:30:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:30:24 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+ERROR - 2025-12-22 20:30:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(838): CodeIgniter\Model->doInsert()
+#6 /home/eric/Desafio/desafio/system/Model.php(797): CodeIgniter\BaseModel->insert()
+#7 /home/eric/Desafio/desafio/app/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-12-22 20:30:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: GET, Route: proximo/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:30:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:30:56 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+ERROR - 2025-12-22 20:30:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(838): CodeIgniter\Model->doInsert()
+#6 /home/eric/Desafio/desafio/system/Model.php(797): CodeIgniter\BaseModel->insert()
+#7 /home/eric/Desafio/desafio/app/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-12-22 20:30:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: GET, Route: proximo/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:30:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:30:56 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-12-22 20:31:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(838): CodeIgniter\Model->doInsert()
+#6 /home/eric/Desafio/desafio/system/Model.php(797): CodeIgniter\BaseModel->insert()
+#7 /home/eric/Desafio/desafio/app/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-12-22 20:31:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: GET, Route: proximo/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:31:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:31:10 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+ERROR - 2025-12-22 20:32:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE CASCADE) in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(838): CodeIgniter\Model->doInsert()
+#6 /home/eric/Desafio/desafio/system/Model.php(797): CodeIgniter\BaseModel->insert()
+#7 /home/eric/Desafio/desafio/app/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-12-22 20:32:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+[Method: GET, Route: proximo/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:32:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:32:23 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`Desafio`.`fila`, CONSTRAINT `fila_sala_id` FOREIGN KEY (`fila_sala_id`) REFERENCES `sala` (`sala_id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+ERROR - 2025-12-22 20:34:10 --> mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+#6 /home/eric/Desafio/desafio/system/Model.php(860): CodeIgniter\BaseModel->update()
+#7 /home/eric/Desafio/desafio/app/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-12-22 20:34:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'WHERE'
+[Method: GET, Route: proximo/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(860): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:34:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'WHERE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(860): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:34:10 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'WHERE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(860): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+ERROR - 2025-12-22 20:34:11 --> mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/eric/Desafio/desafio/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/eric/Desafio/desafio/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/eric/Desafio/desafio/system/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eric/Desafio/desafio/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/eric/Desafio/desafio/system/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+#6 /home/eric/Desafio/desafio/system/Model.php(860): CodeIgniter\BaseModel->update()
+#7 /home/eric/Desafio/desafio/app/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+#8 /home/eric/Desafio/desafio/system/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+#9 /home/eric/Desafio/desafio/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/eric/Desafio/desafio/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/eric/Desafio/desafio/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /home/eric/Desafio/desafio/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/eric/Desafio/desafio/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/eric/Desafio/desafio/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2025-12-22 20:34:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'WHERE'
+[Method: GET, Route: proximo/7]
+in SYSTEMPATH/Database/BaseConnection.php on line 684.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(860): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:34:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'WHERE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(860): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:34:11 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'WHERE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1010): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(860): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Controllers/FilaController.php(105): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:35:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/login.php"
+[Method: GET, Route: proximo/13]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/FilaController.php(106): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+CRITICAL - 2025-12-22 20:36:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/login.php"
+[Method: GET, Route: proximo/13]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/FilaController.php(106): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:37:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/login.php"
+[Method: GET, Route: proximo/14]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/FilaController.php(106): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-12-22 20:39:57 --> ErrorException: Undefined variable $resultado
+[Method: GET, Route: proximo/16]
+in APPPATH/Views/admin/admin.php on line 3.
+ 1 APPPATH/Views/admin/admin.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/layoutAdmin.php(3): include('/home/eric/Desafio/desafio/app/Views/admin/admin.php')
+ 3 SYSTEMPATH/View/View.php(226): include('/home/eric/Desafio/desafio/app/Views/layoutAdmin.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1199): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/FilaController.php(106): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\FilaController->proximo()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/eric/Desafio/desafio/public/index.php')
+DEBUG - 2025-12-22 20:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-22 20:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
