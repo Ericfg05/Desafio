@@ -61,10 +61,13 @@ class FilaController extends BaseController
         
       
         
-        
+        $value = $valor->getValorMenor();
        // $val = $resultado;
       //  var_dump($val);
-        $value = $valor->getValorMenor();
+      if($value == "NULL"){
+        $datas['resultado'] = "NULL";
+      }else{
+        
         //var_dump($value);
        
             foreach($value as $vs){
@@ -90,6 +93,7 @@ class FilaController extends BaseController
             $datas['data'] = 'date(d/m/Y H:i:s)';
             $datas['sala'] = '$valorSala->sala_nome';*/
           //  var_dump($datas);
+          }
             return view('/FilaExpor', $datas);        
     }   
     

@@ -39,7 +39,7 @@ class UsuarioDao{
           //  }
    
     }
-       $data['fila'] = $resultado;
+       $data['fila'] = $resultado ?? "NULL";
    // var_dump($data['fila']);
         return $data['fila'];
     }
