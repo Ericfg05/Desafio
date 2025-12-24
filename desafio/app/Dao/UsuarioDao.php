@@ -23,7 +23,6 @@ class UsuarioDao{
          // var_dump($sala_id);
         $query = $db->query('SELECT MIN(fila_id) AS min_fila_id from fila where fila_status = 1 and Date(fila_data) = CURDATE() and fila_sala_id ='.$sala_id->sala_id);
         $result = $query->getRow();
-                 var_dump($result);
 
                 if($result->min_fila_id !== null){
                    // var_dump($result->min_fila_id);
@@ -36,12 +35,13 @@ class UsuarioDao{
                         'hora' => $fi->fila_hora ?? null,
                         'status' => $fi->fila_status ?? null,
                         'sala' => $fi->fila_sala_id ?? null,
-                        'atendimento' => date('d/m/Y H:i:s') ?? null
+                        'atendimento' => $fi->fila_data_atendimento ?? null
                     ];
           //  }
    
     }
        $data['fila'] = $resultado ?? "NULL";
+
    // var_dump($data['fila']);
         return $data['fila'];
     }

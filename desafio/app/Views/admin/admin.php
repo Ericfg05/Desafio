@@ -2,16 +2,17 @@
     <h1>Painel Administrativo</h1>
 
     <?php if ($resultado == "NULL") { ?>
-        <h3>Nenhum usuario aguardando na fila</h3>
+        <h3 id="semUsuario">Nenhum usuario aguardando na fila</h3>
     <?php } else { ?>
 
         <?php foreach ($resultado as $rs): ?>
-            <div class="card_<?= $rs['sala_id'] ?>" data-id="<?= $rs['sala_id'] ?>">
+            <div class="card_<?= $rs['sala_id'] ?>">
 
                 <h1 id="salas_<?= $rs['sala_id'] ?>">Sala: <?= $rs['sala'] ?></h1>
                 <h1 id="nomes_<?= $rs['sala_id'] ?>">Nome: <?= $rs['nome'] ?></h1>
                 <p id="posicaos_<?= $rs['sala_id'] ?>">Posição: #<?= $rs['id'] ?></p>
                 <p id="datas_<?= $rs['sala_id'] ?>">Data e hora: <?= $rs['data'] ?></p>
+                <audio id="audioAviso" src="/assets/doorbell-95038.mp3" preload="auto"></audio>
 
             </div>
         <?php endforeach; ?>
@@ -30,33 +31,74 @@ function chamarAjax() {
         cache: false,
         dataType: 'json',
         success: function (response) {
+             response.forEach(item => {
+                const aviso = document.getElementById('semUsuario');
 
-            // response é UM objeto
-            const salaId = response.sala_id;
+                let container = document.getElementById('card_'+item.id_sala);
+                let posicaoEl = document.getElementById('posicaos_' + item.id_sala);
+                let posicao = posicaoEl ? posicaoEl.innerText : 'null';
+            
 
-            const salaEl    = document.getElementById('salas_' + salaId);
-            const nomeEl    = document.getElementById('nomes_' + salaId);
-            const posicaoEl = document.getElementById('posicaos_' + salaId);
-            const dataEl    = document.getElementById('datas_' + salaId);
+                if (item.null) {
 
-            // se não existir na tela, não faz nada
-            if (!salaEl || !nomeEl || !posicaoEl || !dataEl) {
-                console.warn('Elemento não encontrado para sala_id:', salaId);
-                return;
-            }
+            
 
-            // ATUALIZA apenas
-            salaEl.innerText    = "Sala: " + response.sala;
-            nomeEl.innerText    = "Nome: " + response.nome;
-            posicaoEl.innerText = "Posição: #" + response.id;
-            dataEl.innerText    = "Data e hora: " + response.data;
-        }
+                }else if("Posição: #"+item.id == posicao){
+
+                }else{
+                    if (aviso) {aviso.remove()};
+
+                    if (!container) {
+                        container = document.createElement('div');
+                        container.className = 'card_'+item.id_sala;
+                        document.querySelector('.container').appendChild(container);
+                    }    
+                    const sala = document.createElement('h1');
+                    sala.id = 'salas_' + item.id_sala;
+                    sala.innerText = "Sala: " + item.sala;
+
+                    const nome = document.createElement('h1');
+                    nome.id = 'nomes_' + item.id_sala;
+                    nome.innerText = "Nome: " + item.nome;
+
+                    const posicao = document.createElement('p');
+                    posicao.id = 'posicaos_' +item.id_sala;
+                    posicao.innerText = "Posição: #" + item.id;
+
+                    const data = document.createElement('p');
+                    data.id = 'datas_' + item.id_sala;
+                    data.innerText = "Data e hora: " + item.data;
+
+                    const botao = document.createElement('a');
+                    botao.className = 'btn btn-primary';
+                    botao.href = '<?= base_url("/proximo/") ?>' + item.id;
+                    botao.innerHTML = '<i class="bi bi-bag-plus-fill"></i> Proximo';
+
+                    container.appendChild(sala);
+                    container.appendChild(nome);
+                    container.appendChild(posicao);
+                    container.appendChild(data);
+                    container.appendChild(botao);
+                    tocarAudio();
+
+                }
+            
+        
+
+    });
+       }
     });
 }
 
 // chama imediatamente
 chamarAjax();
-
+function tocarAudio() {
+    const audio = document.getElementById('audioAviso');
+    if (audio) {
+        audio.currentTime = 0; // reinicia
+        audio.play().catch(() => {});
+    }
+}
 // chama a cada 2 segundos
 setInterval(chamarAjax, 2000);
 </script>

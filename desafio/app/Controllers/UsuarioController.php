@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Controllers;
-use CodeIgniter\HTTP\ResponseInterface;
 use App\Controllers\BaseController;
 use App\Dao\UsuarioDao;
 use App\Models\Sala;
 use App\Models\Usuario;
+use CodeIgniter\HTTP\ResponseInterface;
 use DateTime;
 
 class UsuarioController extends BaseController
@@ -73,29 +73,36 @@ class UsuarioController extends BaseController
 
     }
     public function jsonUser(){
-          
+                 date_default_timezone_set('America/Sao_Paulo');
+
                 $user = new UsuarioDao();
-               $user = $user->getSalas();
-               var_dump($user);
-               if($user == "NULL"){
-                $datas['resultado'] = "NULL";
+               $usuarios = $user->getSalas();
+               //var_dump($usuarios);
+               if($usuarios == "NULL"){
+                $rs[] = [
+                    'null' => 'NULL'
+                ];
+                    return $this->response->setjson($rs);
 
                }else{
-                foreach($user as $vs){
+                foreach($usuarios as $vs){
                
                 $valorSala = $this->sala->find($vs['sala']) ;   
-                $data = new DateTime($vs['data']);
+                $data = new DateTime($vs['atendimento']);
                 $rs[] = [
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
-                    'data' => $data->format('d/m/Y'),
+                    'data' => $data->format('d/m/Y H:i:s'),
                     'sala' => $valorSala->sala_nome,
                     'id_sala' => $valorSala->sala_id
                 ];
            
                 }
-                return $this->response->setjson($rs);
+              //  var_dump($this->response->setjson($rs));
+                    return $this->response->setjson($rs);
+
         }
+
     }
 
 }

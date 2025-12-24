@@ -34,7 +34,7 @@ class FilaDao{
                         'hora' => $fi->fila_hora ?? null,
                         'status' => $fi->fila_status ?? null,
                         'sala' => $fi->fila_sala_id ?? null,
-                        'atendimento' => date('d/m/Y H:i:s') ?? null
+                        'atendimento' => $fi->fila_data_atendimento ?? null
                     ];
             }
    

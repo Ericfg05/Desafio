@@ -46,6 +46,7 @@ class FilaController extends BaseController
             $data['fila_data'] = date('Y-m-d');
             $data['fila_hora'] = date('H:i:s');
             $data['fila_status'] = 1;
+            $data['fila_data_atendimento'] = date('Y-m-d H:i:s');
             $numero = $this->fila->insert($data);
             $datas['sala'] = $this->salaController->buscarSala();
             $datas['msg'] = msg('Você foi adicionado na fila, você está na posição '.$numero.', aguarde!!!','success');
@@ -73,11 +74,11 @@ class FilaController extends BaseController
             foreach($value as $vs){
               //  var_dump($vs);
                 $valorSala = $this->sala->find($vs['sala']) ;   
-                $data = new DateTime($vs['data']);
+                $data = new DateTime($vs['atendimento']);
                 $rs[] = [
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
-                    'data' => $data->format('d/m/Y'),
+                    'atendimento' => $data->format('d/m/Y H:i:s'),
                     'sala' => $valorSala->sala_nome,
                     'sala_id' =>  $valorSala->sala_id
 
@@ -99,6 +100,8 @@ class FilaController extends BaseController
             return view('/FilaExpor', $datas);        
     }   
     public function jsonLista(){
+                 date_default_timezone_set('America/Sao_Paulo');
+
           $valor = new FilaDao();
         $datas['sala'] = $this->sala->findAll();
         
@@ -116,11 +119,11 @@ class FilaController extends BaseController
             foreach($value as $vs){
               //  var_dump($vs);
                 $valorSala = $this->sala->find($vs['sala']) ;   
-                $data = new DateTime($vs['data']);
+                $data = new DateTime($vs['atendimento']);
                 $rs[] = [
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
-                    'data' => $data->format('d/m/Y'),
+                    'data' => $data->format('d/m/Y H:i:s'),
                     'sala' => $valorSala->sala_nome,
                     'sala_id' =>  $valorSala->sala_id
 
@@ -133,6 +136,8 @@ class FilaController extends BaseController
 }
 
     public function proximo($id){
+         date_default_timezone_set('America/Sao_Paulo');
+
         // pegaria o proxima_sala. ou seja, o atual seria colocado status 0 e adicionado o proximo com a sala que deverá receber o novo atendente.
         $filas = $this->fila->find($id);
        // var_dump($filas);
@@ -150,15 +155,18 @@ class FilaController extends BaseController
                 foreach($user as $vs){
                
                 $valorSala = $this->sala->find($vs['sala']) ;   
-                $data = new DateTime($vs['data']);
+               // $data = new DateTime($vs['data']+" "+$vs['hora']);
                 $rs[] = [
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
-                    'data' => $data->format('d/m/Y'),
+                    'data' => date('d/m/Y H:i:s'),
                     'sala' => $valorSala->sala_nome,
                     'sala_id' => $valorSala->sala_id
                 ];
-           
+                $this->fila->set('fila_data_atendimento', date('Y-m-d H:i:s'));
+                $this->fila->where('fila_id', $vs['id']);
+                $this->fila->update();
+
             }   
 
             $datas['resultado'] = $rs;
