@@ -6,6 +6,8 @@
     <!-- Import materialize.css -->
     <link type="text/css" rel="stylesheet" href="<?= base_url('assets/materialize/css/bootstrap.css') ?>" media="screen,projection"/>
     <script src="<?= base_url('assets/js/bootstrap.js') ?>"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Fila</title>
 </head>

@@ -13,4 +13,7 @@ $routes->get('/admin', 'UsuarioController::index');
 $routes->post('/login', 'UsuarioController::login');
 $routes->get('/proximo/(:any)','FilaController::proximo/$1');
 $routes->get('/json','UsuarioController::jsonUser');
+$routes->get('/listar','FilaController::jsonLista');
+
+
 

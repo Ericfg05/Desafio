@@ -54,7 +54,9 @@ class UsuarioController extends BaseController
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
                     'data' => $data->format('d/m/Y'),
-                    'sala' => $valorSala->sala_nome
+                    'sala' => $valorSala->sala_nome,
+                    'sala_id' => $valorSala->sala_id
+
                 ];
            
             }   
@@ -72,14 +74,12 @@ class UsuarioController extends BaseController
     }
     public function jsonUser(){
           
-            
-            
-           
-            
                 $user = new UsuarioDao();
                $user = $user->getSalas();
+               var_dump($user);
                if($user == "NULL"){
-                    
+                $datas['resultado'] = "NULL";
+
                }else{
                 foreach($user as $vs){
                
@@ -89,7 +89,8 @@ class UsuarioController extends BaseController
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
                     'data' => $data->format('d/m/Y'),
-                    'sala' => $valorSala->sala_nome
+                    'sala' => $valorSala->sala_nome,
+                    'id_sala' => $valorSala->sala_id
                 ];
            
                 }

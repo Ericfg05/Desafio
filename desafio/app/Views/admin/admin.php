@@ -1,26 +1,26 @@
 <div class="container">
     <h1>Painel Administrativo</h1>
-    <?php if($resultado == "NULL"){?>
+
+    <?php if ($resultado == "NULL") { ?>
         <h3>Nenhum usuario aguardando na fila</h3>
-    <?php }else{ ?>
-        <?php foreach($resultado as $rs): ?>
-                <h1><?= "Sala: ".$rs['sala'] ?></h1>
-                <h1 id="pa"><?= "Nome:".$rs['nome'] ?></h1>
-                <p><?= "Posição: #". $rs['id'] ?></p>
-                <p> <?= "Data e hora: ".$rs['data'] ?></p>
-            <?php endforeach; ?>
-    
-            <input type="hidden" name="id" value="<?= $rs['id'] ?>">
-            <a class="btn btn-primary" href="<?= base_url("/proximo/".$rs['id']); ?>">
+    <?php } else { ?>
+
+        <?php foreach ($resultado as $rs): ?>
+            <div class="card_<?= $rs['sala_id'] ?>" data-id="<?= $rs['sala_id'] ?>">
+
+                <h1 id="salas_<?= $rs['sala_id'] ?>">Sala: <?= $rs['sala'] ?></h1>
+                <h1 id="nomes_<?= $rs['sala_id'] ?>">Nome: <?= $rs['nome'] ?></h1>
+                <p id="posicaos_<?= $rs['sala_id'] ?>">Posição: #<?= $rs['id'] ?></p>
+                <p id="datas_<?= $rs['sala_id'] ?>">Data e hora: <?= $rs['data'] ?></p>
+
+            </div>
+        <?php endforeach; ?>
+              <a class="btn btn-primary" href="<?= base_url("/proximo/".$rs['id']); ?>">
                 <i class="bi bi-bag-plus-fill"></i> 
                 Proximo
             </a>
-            <br>
-            <p id="resultado"></p>
-     <?php }?>
-
+    <?php } ?>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
 function chamarAjax() {
@@ -30,14 +30,26 @@ function chamarAjax() {
         cache: false,
         dataType: 'json',
         success: function (response) {
-         $("#resultado").val(response);
-           // window.alert('ala')
-            console.log(response);
-        },
-        error: function () {
-           // document.getElementById('pa').innerHTML = "Nome: teste"
-            //console.log(response);
-            console.log('Erro na requisição');
+
+            // response é UM objeto
+            const salaId = response.sala_id;
+
+            const salaEl    = document.getElementById('salas_' + salaId);
+            const nomeEl    = document.getElementById('nomes_' + salaId);
+            const posicaoEl = document.getElementById('posicaos_' + salaId);
+            const dataEl    = document.getElementById('datas_' + salaId);
+
+            // se não existir na tela, não faz nada
+            if (!salaEl || !nomeEl || !posicaoEl || !dataEl) {
+                console.warn('Elemento não encontrado para sala_id:', salaId);
+                return;
+            }
+
+            // ATUALIZA apenas
+            salaEl.innerText    = "Sala: " + response.sala;
+            nomeEl.innerText    = "Nome: " + response.nome;
+            posicaoEl.innerText = "Posição: #" + response.id;
+            dataEl.innerText    = "Data e hora: " + response.data;
         }
     });
 }
@@ -45,6 +57,6 @@ function chamarAjax() {
 // chama imediatamente
 chamarAjax();
 
-// chama a cada 2 segundos (2000 ms)
+// chama a cada 2 segundos
 setInterval(chamarAjax, 2000);
 </script>

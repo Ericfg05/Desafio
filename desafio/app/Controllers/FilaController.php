@@ -78,7 +78,9 @@ class FilaController extends BaseController
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
                     'data' => $data->format('d/m/Y'),
-                    'sala' => $valorSala->sala_nome
+                    'sala' => $valorSala->sala_nome,
+                    'sala_id' =>  $valorSala->sala_id
+
                 ];
            
             }
@@ -96,7 +98,39 @@ class FilaController extends BaseController
           }
             return view('/FilaExpor', $datas);        
     }   
-    
+    public function jsonLista(){
+          $valor = new FilaDao();
+        $datas['sala'] = $this->sala->findAll();
+        
+      
+        
+        $value = $valor->getValorMenor();
+       // $val = $resultado;
+      //  var_dump($val);
+      if($value == "NULL"){
+        $datas['resultado'] = "NULL";
+      }else{
+        
+        //var_dump($value);
+       
+            foreach($value as $vs){
+              //  var_dump($vs);
+                $valorSala = $this->sala->find($vs['sala']) ;   
+                $data = new DateTime($vs['data']);
+                $rs[] = [
+                    'id' => $vs['id'],
+                    'nome' => $vs['nome'],
+                    'data' => $data->format('d/m/Y'),
+                    'sala' => $valorSala->sala_nome,
+                    'sala_id' =>  $valorSala->sala_id
+
+                ];
+           
+            }
+             
+         return $this->response->setjson($rs);
+    }
+}
 
     public function proximo($id){
         // pegaria o proxima_sala. ou seja, o atual seria colocado status 0 e adicionado o proximo com a sala que deverá receber o novo atendente.
@@ -110,6 +144,9 @@ class FilaController extends BaseController
         $this->fila->update();
         $user = new UsuarioDao();
                $user = $user->getSalas();
+               if($user == "NULL"){
+                  $datas['resultado'] = "NULL";
+               }else{
                 foreach($user as $vs){
                
                 $valorSala = $this->sala->find($vs['sala']) ;   
@@ -118,14 +155,16 @@ class FilaController extends BaseController
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
                     'data' => $data->format('d/m/Y'),
-                    'sala' => $valorSala->sala_nome
+                    'sala' => $valorSala->sala_nome,
+                    'sala_id' => $valorSala->sala_id
                 ];
            
             }   
 
             $datas['resultado'] = $rs;
-                return view('/layoutAdmin.php', $datas);
-        return view('/layoutAdmin.php');
+            }
+        return view('/layoutAdmin.php', $datas);
+        //return view('/layoutAdmin.php');
         //
     }
 }

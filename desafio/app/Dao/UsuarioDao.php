@@ -17,12 +17,14 @@ class UsuarioDao{
     public function getSalas(){
         $db      = db_connect();
         $session = session();
+       
         $sala_id = $this->sala->find($session->get('sala'));
        // foreach($sala_id as $ids){
-         
-        $query = $db->query('SELECT MIN(fila_id) AS min_fila_id from fila where fila_status = 1 and Date(fila_data) = CURDATE() and fila_sala_id ='. (int) $sala_id->sala_id);
+         // var_dump($sala_id);
+        $query = $db->query('SELECT MIN(fila_id) AS min_fila_id from fila where fila_status = 1 and Date(fila_data) = CURDATE() and fila_sala_id ='.$sala_id->sala_id);
         $result = $query->getRow();
-        
+                 var_dump($result);
+
                 if($result->min_fila_id !== null){
                    // var_dump($result->min_fila_id);
                     $fi =  $this->fila->find($result->min_fila_id);
