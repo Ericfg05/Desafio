@@ -5,7 +5,7 @@
 <form class="d-flex justify-content-center mt-3" action="<?= base_url('/inserir')?>" method="POST">
     <div class="dvs">
     <div class="col-md-5 mt-4 col-md-6 col-12">
-        <h1 class="text-start align-self-start">Pegue sua senha</h1>
+        <h1 class="text-start align-self-start">Entre na fila</h1>
     </div>
     <div class=" col-md-5 mt-4 col-md-6 col-12">
         <label for="NomeCompleto" class="form-label fs-3">Nome Completo</label>

@@ -1,27 +1,45 @@
-<?php ?>
-    <div class="container" id="card3">
-        <?php if($resultado == "NULL"){ ?>
-            <h1 id="nUser">Nenhum Usuario aguardando na fila</h1>
-            <audio id="audioAviso" src="/assets/doorbell-95038.mp3" preload="auto"></audio>
+<div class="container">
 
-        <?php }else{?>
-            <?php foreach ($resultado as $rs): ?>
-           
+<?php if ($resultado == "NULL") { ?>
 
-            <div class="card_<?= $rs['sala_id'] ?>">
-                <h1 id="sala_<?= $rs['sala_id'] ?>">Sala: <?= $rs['sala'] ?></h1>
-                <h1 id="nome_<?= $rs['sala_id'] ?>">Nome: <?= $rs['nome'] ?></h1>
-                <p id="posicao_<?= $rs['sala_id'] ?>">Posição: #<?= $rs['id'] ?></p>
-                <p id="data_<?= $rs['sala_id'] ?>">Data e hora: <?= $rs['atendimento'] ?></p>
-                <audio id="audioAviso" src="/assets/doorbell-95038.mp3" preload="auto"></audio>
+    <h1 id="nUser">Nenhum Usuario aguardando na fila</h1>
+    <audio id="audioAviso" src="/assets/doorbell-95038.mp3" preload="auto"></audio>
+
+<?php } else { ?>
+
+    <div id="card3" class="d-flex flex-wrap gap-3 mt-3">
+
+        <?php foreach ($resultado as $rs): ?>
+            <div class="card bg-primary text-white"
+                 style="width: calc(33.333% - 1rem); min-width: 18rem;">
+
+                <div class="card-header">
+                    <h5 id="sala_<?= $rs['sala_id'] ?>">
+                        Sala: <?= $rs['sala'] ?>
+                    </h5>
+                </div>
+
+                <div class="card-body card_<?= $rs['sala_id'] ?>">
+                    <h6 id="nome_<?= $rs['sala_id'] ?>">
+                        Nome: <?= $rs['nome'] ?>
+                    </h6>
+                    <p id="posicao_<?= $rs['sala_id'] ?>">
+                        Posição: #<?= $rs['id'] ?>
+                    </p>
+                    <p id="data_<?= $rs['sala_id'] ?>">
+                        <?= $rs['atendimento'] ?>
+                    </p>
+                </div>
+
             </div>
         <?php endforeach; ?>
-            <div id="listaSalas"></div>
 
-        <?php }?>
- 
-        
     </div>
+
+<?php } ?>
+
+</div>
+
 <script>
     function chamarAjax() {
     $.ajax({
