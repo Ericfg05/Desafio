@@ -79,7 +79,6 @@ function chamarAjax() {
                     container.appendChild(posicao);
                     container.appendChild(data);
                     container.appendChild(botao);
-                    tocarAudio();
 
                 }
             
@@ -92,13 +91,7 @@ function chamarAjax() {
 
 // chama imediatamente
 chamarAjax();
-function tocarAudio() {
-    const audio = document.getElementById('audioAviso');
-    if (audio) {
-        audio.currentTime = 0; // reinicia
-        audio.play().catch(() => {});
-    }
-}
+
 // chama a cada 2 segundos
 setInterval(chamarAjax, 2000);
 </script>
