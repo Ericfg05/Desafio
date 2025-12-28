@@ -50,10 +50,12 @@ class UsuarioController extends BaseController
                
                 $valorSala = $this->sala->find($vs['sala']) ;   
                 $data = new DateTime($vs['data']);
+                $hora = new DateTime($vs['hora']);
+
                 $rs[] = [
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
-                    'data' => $data->format('d/m/Y'),
+                    'data' => $data->format('d/m/Y').''.$hora->format('H:i:s'),
                     'sala' => $valorSala->sala_nome,
                     'sala_id' => $valorSala->sala_id
 
@@ -88,11 +90,12 @@ class UsuarioController extends BaseController
                 foreach($usuarios as $vs){
                
                 $valorSala = $this->sala->find($vs['sala']) ;   
-                $data = new DateTime($vs['atendimento']);
+                $data = new DateTime($vs['data']);
+                $hora = new DateTime($vs['hora']);
                 $rs[] = [
                     'id' => $vs['id'],
                     'nome' => $vs['nome'],
-                    'data' => $data->format('d/m/Y H:i:s'),
+                    'data' => $data->format('d/m/Y').' '.$hora->format('H:i:s'),
                     'sala' => $valorSala->sala_nome,
                     'id_sala' => $valorSala->sala_id
                 ];
